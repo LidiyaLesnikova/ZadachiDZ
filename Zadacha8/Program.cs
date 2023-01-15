@@ -5,10 +5,21 @@
 Console.WriteLine("Введите число: ");
 
 int number = Convert.ToInt32(Console.ReadLine());
-int сount = 2;
-while (сount<=number)
+int сount = 0;
+if (number<0)
 {
-    Console.Write($"{сount}, ");
-    сount = сount+2; 
+    while (сount>number)
+    {
+        сount = сount-2;
+        Console.Write($"{сount}, ");
+    }
+}
+else
+{
+   while (сount<number)
+    {
+        сount = сount+2;
+        Console.Write($"{сount}, ");
+    } 
 }
 Console.Write("\b\b.");
