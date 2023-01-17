@@ -3,9 +3,8 @@
 // 645 -> 5
 // 78 -> третьей цифры нет
 // 32679 -> 6
+
 Console.Write("Введите число: ");
-string num = Console.ReadLine();
-string[] array = num.ToCharArray();
-//string[] array = new Convert.ToString(num);
-if (array.Length<3) Console.WriteLine($"{num} -> третьей цифры нет");
-else Console.WriteLine($"{num} -> {array[2]}");
+string num = Console.ReadLine()!;
+if (num.Length<3) Console.WriteLine($"{num} -> третьей цифры нет");
+else Console.WriteLine($"{num} -> третья цифра: {num[2]}");
