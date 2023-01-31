@@ -28,6 +28,8 @@ int FillArray(int[] arr, string? query)
         else 
         {
             arr[i] = new Random().Next(0, 101);
+            // double num = (new Random().NextDouble())*10;
+            // Console.WriteLine(Math.Round(num,2));
             Console.Write($"{arr[i]}, ");
         }
         if (i==0)
