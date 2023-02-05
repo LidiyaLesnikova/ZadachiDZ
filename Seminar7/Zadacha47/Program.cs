@@ -15,7 +15,7 @@ for (int i = 0; i < arr.GetLength(0); i++)
 {
     for (int j = 0; j < arr.GetLength(1); j++)
     {
-        arr[i,j] = Math.Round((new Random().NextDouble()*10),2);
+        arr[i,j] = Math.Round((new Random().NextDouble()*10-5),2);
     }
 }
 PrintArray(arr);
@@ -26,7 +26,7 @@ void PrintArray(double[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            Console.Write($"{array[i, j],6}");
+            Console.Write($"{array[i, j],8}");
         }
         Console.WriteLine();
     }
