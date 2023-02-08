@@ -6,9 +6,9 @@
 // 10 09 08 07
 Console.Write("Введите размер массива (количество строк и столбцов): ");
 int kol = Convert.ToInt32(Console.ReadLine());
-while (kol<4)
+while (kol<2)
 {
-    Console.Write("Некорректный размер (от 4 и более), введите заново: ");
+    Console.Write("Некорректный размер (от 2 и более), введите заново: ");
     kol = Convert.ToInt32(Console.ReadLine());
 }
 int[,] arr = FillArray(kol, kol);
